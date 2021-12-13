@@ -1,0 +1,13 @@
+services:
+
+    # Contao frontend module Diversworld\ContaoCoursebookingBundle\Controller\FrontendModule\CoursesModuleController
+    # We used annotations for tagging the frontend module category, the frontend module type and the frontend module template
+    Diversworld\ContaoCoursebookingBundle\Controller\FrontendModule\CoursesModuleController:
+        tags:
+            - { name: container.service_subscriber }
+        public: true
+        # Since Symfony 5 the container has to be set manually
+        calls:
+            - [ setContainer, [ '@Psr\Container\ContainerInterface' ] ]
+    
+
