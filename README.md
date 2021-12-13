@@ -1,4 +1,4 @@
-![Alt text](docs/logo.png?raw=true "logo")
+![Alt text](docs/dwlogo.png?raw=true "logo")
 
 
 # Welcome to Kursbuchungen
